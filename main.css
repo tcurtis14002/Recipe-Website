@@ -253,19 +253,24 @@ ul {
   margin: 0 auto;
   margin-top: -1rem;
 }
-/* Navbar */
+/* 
+
+===============================================================================================
+===============================================================================================
+
+*/
 
 .navbar {
   display: flex;
   justify-content: center;
   align-items:center;
-  background: blue;
+  /* background: green; */
 }
 
 .nav-center {
   width: 90vw;
   max-width: var(--max-width);
-  background: red;
+  /* background: red; */
 }
 
 .nav-header {
@@ -274,12 +279,19 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  /* background: blue; */
+}
 
-  background: pink;
+.nav-logo a{
+  background: red;
+  padding: 0;
+  margin: 0;
+
 }
 
 .nav-logo {
-  height:6.5rem;
+  height: 7rem;
 }
 
 .nav-btn {
@@ -291,6 +303,7 @@ ul {
 .nav-links {
   display: flex;
   flex-direction: column;
+  color:
   /* todo */
 }
 
@@ -298,15 +311,15 @@ ul {
   display: block;
   text-align: center;
   text-transform: capitalize;
-  color: rgb(154, 150, 150);
+  color: var(--grey-900);
+  letter-spacing: var(--letterSpacing);
   padding: 1rem 0;
-  border-top: 1px solid grey;
-  
+  border-top: 1px solid var(--grey-500);
+  transition: var(--transition);
 }
 
-.contact-link {
-  padding:0.15rem 1rem;
-
+.nav-link:hover {
+  color: var(--primary-500);
 }
 
 .contact-link a {
