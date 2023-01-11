@@ -1,3 +1,7 @@
+* {
+  overflow: hidden;
+}
+
 /* Root Variables */
 :root {
   --max-width:1120px;
@@ -14,27 +18,29 @@
 }
 
 .nav-center {
-  width: 90%;
+  width: 90vw;
   max-width: var(--max-width);
   background: red;
 }
 
 .nav-header {
   width: 100%;
-  max-width: none;
   height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   background: pink;
 }
 
-.nav-header, img {
-  width: 200px;
+.nav-logo {
+  height:6.5rem;
 }
 
 .nav-btn {
-  padding: 0.15 padding 0.75rem;
+  padding: 0.15px 0.75rem;
+  height: 2rem;
+  width: 3rem;
 }
 
 .nav-links {
@@ -56,5 +62,9 @@
 .contact-link {
   padding:0.15rem 1rem;
 
+}
+
+.contact-link a {
+  padding: 0.15rem 1rem;
 }
 
