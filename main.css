@@ -284,13 +284,16 @@ ul {
 }
 
 .nav-logo a {
-  background: red;
   padding: 0;
   margin: 0;
 }
 
 .nav-logo {
   height: 7rem;
+}
+.nav-logo img {
+  border-radius: var(--borderRadius);
+  padding-top: 1rem;
 }
 
 .nav-btn {
@@ -540,6 +543,18 @@ Recipes
 
 /* 
 ===========================================
-Comment
+Error
+===========================================
+ */
+.error-page {
+  text-align: center;
+  padding-top: 5rem;
+}
+.error-page h1 {
+  font-size: 9rem;
+}
+/* 
+===========================================
+template
 ===========================================
  */
