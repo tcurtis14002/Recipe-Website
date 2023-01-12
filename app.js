@@ -15,4 +15,4 @@ navBtnDOM.addEventListener("click", () => {
 
 const date = getElement("#date");
 const currentYear = new Date().getFullYear();
-date.textConent = currentYear;
+date.textContent = currentYear;
