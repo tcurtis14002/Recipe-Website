@@ -439,10 +439,17 @@ Hero
   }
 } /* 
 ===========================================
-Comment
+Recipes
 ===========================================
  */
-
+.recipes-ctn {
+  display: grid;
+  gap: 2rem 1rem;
+  border: 2px solid red;
+}
+.tags-ctn {
+  border: 2px solid blue;
+}
 /* 
 ===========================================
 Comment
