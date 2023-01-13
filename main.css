@@ -679,7 +679,7 @@ Simgle Recipe
   height: 300px;
   border-radius: var(--borderRadius);
 }
-.recipe-info p {
+.recipe-hero p {
   color: var(--grey-600);
 }
 .recipe-icons {
