@@ -712,11 +712,56 @@ Simgle Recipe
   background: var(--primary-500);
   border-radius: var(--borderRadius);
   color: var(--white);
-  padding: 0.05rem .5rem
-  margin: 0 .25rem;
+  padding: 0.05rem 0.5rem;
+  margin: 0 0.25rem;
   text-transform: capitalize;
 }
 
+@media screen and (min-width: 992px) {
+  .recipe-hero {
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+  }
+}
+.recipe-content {
+  padding: 3rem 0;
+  display: grid;
+  gap: 2rem 5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .recipe-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.single-instruction-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.single-instruction-header p {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+  color: var(--primary-500);
+}
+.single-instruction > p {
+  color: var(--grey-700);
+}
+.single-instruction header div {
+  height: 2px;
+  background: var(--grey-300);
+}
+.second-column {
+  display: grid;
+  gap: 2rem;
+}
+.single-ingredient {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--grey-700);
+}
 /* 
 ===========================================
 template
