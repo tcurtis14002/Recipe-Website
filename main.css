@@ -260,6 +260,12 @@ ul {
 
 */
 
+/* 
+===========================================
+Navbar
+===========================================
+ */
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -376,6 +382,7 @@ ul {
 Page
 ===========================================
  */
+
 .page {
   width: 90vw;
   max-width: var(--max-width);
@@ -383,11 +390,13 @@ Page
   padding-top: 2rem;
   min-height: calc(100vh - (6rem + 4rem));
 }
+
 /* 
 ===========================================
 Footer
 ===========================================
  */
+
 .page-footer {
   height: 4rem;
   background: var(--black);
@@ -411,6 +420,7 @@ Footer
 Hero
 ===========================================
  */
+
 .hero {
   height: 40vh;
   background: url("./recources/main.jpg") center/cover no-repeat;
@@ -440,11 +450,13 @@ Hero
     font-size: 4rem;
     margin-bottom: 0;
   }
-} /* 
+}
+/* 
 ===========================================
 Recipes
 ===========================================
  */
+
 .recipes-ctn {
   display: grid;
   gap: 2rem 1rem;
@@ -553,6 +565,43 @@ Error
 .error-page h1 {
   font-size: 9rem;
 }
+/* 
+===========================================
+About
+===========================================
+ */
+
+.about-page h2 {
+  text-transform: none;
+  font-weight: bold;
+}
+.about-page {
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 4rem;
+}
+.about-img {
+  border-radius: var(--borderRadius);
+  height: 300px;
+}
+
+@media screen and (min-width: 992px) {
+  .about-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+  }
+  .about-img {
+    height: 100%;
+  }
+}
+.featured-recipes {
+  grid-template-columns: repeat(3, 1fr);
+}
+.featured-title {
+  text-align: center;
+}
+
 /* 
 ===========================================
 template
